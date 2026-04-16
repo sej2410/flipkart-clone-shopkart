@@ -1,4 +1,4 @@
-# ShopKart: A Modern High-Fidelity Flipkart Clone 🛒💎
+# ShopKart: A Flipkart Clone 🛒💎
 
 ShopKart is a state-of-the-art e-commerce web application inspired by the latest minimalist "Infinity Design" language of Flipkart. This project features a clean, white-themed UI, a high-fidelity product catalog, and several premium bonus features including mock authentication and a responsive grid layout.
 
