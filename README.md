@@ -2,6 +2,11 @@
 
 ShopKart is a state-of-the-art e-commerce web application inspired by the latest minimalist "Infinity Design" language of Flipkart. This project features a clean, white-themed UI, a high-fidelity product catalog, and several premium bonus features including mock authentication and a responsive grid layout.
 
+## 🚀 Live Demo
+
+Frontend: https://flipkart-clone-shopkart.vercel.app  
+Backend API: https://flipkart-clone-shopkart-1.onrender.com
+
 ## 🌟 Key Features
 - **Modern Minimalist UI**: Rebranded with a sleek white header, rounded search bar, and pastel-themed product sections.
 - **High-Fidelity Media**: 100% verified, stable, and accurate product imagery across 7 categories.
