@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
 
   const fetchCart = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/cart');
+      const res = await axios.get('/api/cart');
       setCartItems(res.rows || res.data); // Handle both formats
     } catch (err) {
       console.error("Error fetching cart", err);
@@ -26,7 +26,7 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = async (productId, quantity = 1) => {
     try {
-      await axios.post('http://localhost:5000/api/cart', { productId, quantity });
+      await axios.post('/api/cart', { productId, quantity });
       fetchCart();
     } catch (err) {
       console.error("Error adding to cart", err);
@@ -36,7 +36,7 @@ export const CartProvider = ({ children }) => {
   const updateQuantity = async (itemId, quantity) => {
     if (quantity < 1) return;
     try {
-      await axios.put(`http://localhost:5000/api/cart/${itemId}`, { quantity });
+      await axios.put(`/api/cart/${itemId}`, { quantity });
       fetchCart();
     } catch (err) {
       console.error("Error updating quantity", err);
@@ -45,7 +45,7 @@ export const CartProvider = ({ children }) => {
 
   const removeFromCart = async (itemId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/cart/${itemId}`);
+      await axios.delete(`/api/cart/${itemId}`);
       fetchCart();
     } catch (err) {
       console.error("Error removing from cart", err);

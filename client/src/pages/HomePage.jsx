@@ -17,7 +17,7 @@ const HomePage = () => {
         const searchParams = new URLSearchParams(location.search);
         const search = searchParams.get('search') || '';
         
-        const res = await axios.get('http://localhost:5000/api/products', {
+        const res = await axios.get('/api/products', {
           params: { search, category }
         });
         setProducts(res.data);

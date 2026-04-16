@@ -16,7 +16,7 @@ const CheckoutPage = () => {
     
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/orders', { address });
+      const res = await axios.post('/api/orders', { address });
       setOrderPlaced(true);
       await fetchCart(); // Refresh cart (to clear it)
       navigate(`/order-success/${res.data.orderId}`);
