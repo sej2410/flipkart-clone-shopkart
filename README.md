@@ -53,8 +53,5 @@ ShopKart is a state-of-the-art e-commerce web application inspired by the latest
    npm run dev
    ```
 
-## 📐 Design Philosophy: "Infinity White"
-The project transitions away from legacy blue-header designs toward a modern, breathable, and premium white-space aesthetic. Key accents include Flipkart's iconic blue and orange, paired with soft pastel backgrounds for featured product sections.
-
 ---
 **Developed by Sejal (sej2410)**
